@@ -1,0 +1,37 @@
+/* Custom css styles */
+.lr-font-garamond {
+    font-family: 'EB Garamond', serif;
+}
+
+.lr-font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.lr-text-primary {
+    color: #B68C5A;
+}
+
+.lr-bg-primary {
+    background-color: #B68C5A;
+}
+
+.lr-input-color {
+    color: #A0A0A0;
+}
+
+.lr-title-color {
+    color: #414040;
+}
+
+.lr-paragraph-color {
+    color: #707070;
+}
+
+.lr-carousel-paragraph-color {
+    color: #F3F3F3;
+}
+
+.lr-footer-list-item-color,
+.lr-grid-border {
+    color: #CFCFCF;
+}
