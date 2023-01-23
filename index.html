@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/f30d40df6a.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -19,7 +20,99 @@
 </head>
 
 <body>
+    <!---------------------
+         Header Section
+    ----------------------->
 
+    <header class="container">
+
+        <!-------------------Nav Bar--------------------------->
+
+        <nav class="lr-nav navbar navbar-expand-lg bg-white py-5 my-2 w-75 mx-auto">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-4 mb-lg-0" href="#">
+                    <img class="img-fluid" src="images/logo2.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#">Services <i
+                                    class="fa-solid fa-chevron-right ms-2"></i></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#">Cases <i
+                                    class="fa-solid fa-chevron-right ms-2"></i></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#">Blog <i
+                                    class="fa-solid fa-chevron-right ms-2"></i></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" aria-current="page" href="#">Contact Us<i
+                                    class="fa-solid fa-chevron-right ms-2"></i></a>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="border-0 lr-bg-primary text-white fw-semibold p-3 rounded-3 "
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Free
+                        Consultation</button>
+
+                    <!-- Modal -->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Need A Free Consultation?</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <textarea class="px-3 px-lg-4 py-3 form-control" cols="50" rows="5"
+                                        placeholder="Let us inform your problem"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <!---------------------------- Banner-------------------->
+
+        <section
+            class="banner-container w-75 mx-auto rounded-3 text-white d-flex align-items-center justify-content-center p-5">
+            <div class="w-75 mx-auto text-center">
+                <h1 class="lr-font-garamond fw-bolder display-1 mb-4">We Provide Effective Legal Solutions</h1>
+                <p class="lr-font-poppins lr-banner-info-color">There are many variations of passages of Lorem Ipsum
+                    available, but the
+                    majority have suffered
+                    alteration
+                    in some form, by injected humour.</p>
+                <div class="row justify-content-around mt-4 pt-2">
+                    <input class="col-lg-9 p-3 rounded-3 lr-input-color" type="search"
+                        placeholder="Search your services">
+                    <button class="col-lg-2 rounded-3 fw-bold text-white lr-bg-primary">Search</button>
+                </div>
+            </div>
+        </section>
+
+    </header>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
