@@ -71,12 +71,36 @@ body {
     background-position: right;
 }
 
-/*==================
-    Practice area
- ===================*/
+/*=======================
+    Practice Section
+ =========================*/
 .law-card:hover {
     background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
     border: 1px solid #E7E7E7;
+}
+
+/*==========================
+    Review Section 
+ ===========================*/
+.lr-slider-img-1 {
+    background-image: url(../images/Rectangle\ 7.png), url(../images/slider-1.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: top;
+}
+
+.lr-slider-img-2 {
+    background-image: url(../images/Rectangle\ 7.png), url(../images/slider-2.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: top;
+}
+
+.lr-slider-img-3 {
+    background-image: url(../images/Rectangle\ 7.png), url(../images/slider-3.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: top;
 }
 
 /*==================
@@ -84,22 +108,15 @@ body {
  ===================*/
 
 @media only screen and (max-width: 786px) {
-    .lr-nav {
+
+    .lr-nav,
+    .banner-container,
+    .section-heading,
+    .slider-container {
         width: 100% !important;
     }
 
-    .banner-container {
-        width: 100% !important;
-    }
-
-    .banner-inner {
-        width: 90% !important;
-    }
-
-    .practice-heading {
-        width: 100% !important;
-    }
-
+    .banner-inner,
     .cards-container {
         width: 90% !important;
     }
