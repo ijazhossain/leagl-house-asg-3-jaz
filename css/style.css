@@ -1,14 +1,15 @@
 /*====================
     Custom css styles 
  ======================*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .lr-font-garamond {
     font-family: 'EB Garamond', serif;
 }
 
 .lr-font-poppins,
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 .lr-text-primary {
     color: #B68C5A;
@@ -38,6 +39,10 @@ body {
 
 .lr-carousel-paragraph-color {
     color: #F3F3F3;
+}
+
+.lr-accordion-background {
+    background-color: #F3F3F3 !important;
 }
 
 .lr-footer-list-item-color,
@@ -103,6 +108,14 @@ body {
     background-position: top;
 }
 
+.accordion-button:focus {
+    box-shadow: #F3F3F3 0 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black
+}
+
 /*==================
  Responsive Design 
  ===================*/
@@ -112,7 +125,10 @@ body {
     .lr-nav,
     .banner-container,
     .section-heading,
-    .slider-container {
+    .slider-container,
+    .asked-questions,
+    .asked-questions-left,
+    .asked-questions-right {
         width: 100% !important;
     }
 
