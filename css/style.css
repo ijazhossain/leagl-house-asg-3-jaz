@@ -1,4 +1,6 @@
-/* Custom css styles */
+/*====================
+    Custom css styles 
+ ======================*/
 .lr-font-garamond {
     font-family: 'EB Garamond', serif;
 }
@@ -24,12 +26,14 @@ body {
     color: #414040;
 }
 
-.lr-banner-info-color {
+.lr-banner-info {
     color: #E7E7E7;
+    line-height: 26px;
 }
 
-.lr-paragraph-color {
+.lr-paragraph {
     color: #707070;
+    line-height: 26px;
 }
 
 .lr-carousel-paragraph-color {
@@ -41,18 +45,66 @@ body {
     color: #CFCFCF;
 }
 
+.lr-card-border-left {
+    border-left: 1px solid #E7E7E7 !important;
+}
+
+.lr-card-border-right {
+    border-right: 1px solid #E7E7E7 !important;
+}
+
+.lr-card-border-top {
+    border-top: 1px solid #E7E7E7 !important;
+}
+
+.lr-card-border-bottom {
+    border-bottom: 1px solid #E7E7E7 !important;
+}
+
+/*=============
+    Banner
+================*/
 .banner-container {
     background-image: linear-gradient(360deg, #111111 0%, rgba(17, 17, 17, 0) 100%), url('../images/banner.png');
     height: 550px;
     background-size: cover;
     background-position: right;
-
 }
 
-/* Responsive Design */
+/*==================
+    Practice area
+ ===================*/
+.law-card:hover {
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+    border: 1px solid #E7E7E7;
+}
 
-@media only screen and (max-width: 576px) {
+/*==================
+ Responsive Design 
+ ===================*/
+
+@media only screen and (max-width: 786px) {
     .lr-nav {
         width: 100% !important;
+    }
+
+    .banner-container {
+        width: 100% !important;
+    }
+
+    .banner-inner {
+        width: 90% !important;
+    }
+
+    .practice-heading {
+        width: 100% !important;
+    }
+
+    .cards-container {
+        width: 90% !important;
+    }
+
+    .law-card {
+        border: 1px solid #E7E7E7 !important;
     }
 }
